@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.rohan.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
+        android:drawableLeft="@drawable/rohan"/>
+
+    <EditText
+        android:id="@+id/phone_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/phone_number"
+        android:layout_below="@+id/button3"
+        android:inputType="phone" />
+
+
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/text_email_id"
+        android:layout_below="@+id/phone_number"
+        android:inputType="textEmailAddress" />
+
+    <CheckBox
+        android:id="@+id/checkbox1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox1"
+        android:layout_below="@id/email"/>
+
+    <CheckBox
+        android:id="@+id/checkbox2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox2"
+        android:layout_below="@id/email"
+        android:layout_toRightOf="@id/checkbox1"
+        android:layout_alignParentRight="true"/>
+
+    <CheckBox
+        android:id="@+id/checkbox3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/checkbox3"
+        android:layout_below="@id/checkbox1"/>
+
+
+    <CheckBox
+    android:id="@+id/checkbox4"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/checkbox4"
+    android:layout_below="@id/checkbox1"
+        android:layout_toRightOf="@id/checkbox3"
+        android:layout_alignParentRight="true"/>
+
+
+
+</RelativeLayout>
